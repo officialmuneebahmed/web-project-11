@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Proximabld;
+    src: url(../fonts/Fontspring-DEMO-proximanova-extrabold.otf);
+}
+@font-face {
+    font-family: ProximaMed;
+    src: url(../fonts/Fontspring-DEMO-proximanova-medium.otf);
+}
+@font-face {
+    font-family: ProximaReg;
+    src: url(../fonts/Proxima\ Nova\ Font.otf);
+}
+@font-face {
+    font-family: ProximaThin;
+    src: url(../fonts/Fontspring-DEMO-proximanova-thin.otf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+/* NAV BAR */
+.nav-bar{
+    /* border: 1px solid red; */
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+}
+
+.nav-bar ul li a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: #111;
+    font-family: Proximabld;
+    font-size: 32px;
+
+    width: 100%;
+}
+.nav-bar ul li a:hover{
+    color: #00cc83;
+}
+
+/* MAIN */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.m-h1{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: 300;
+    font-family: ProximaReg, Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    height: auto;
+    width: 70%;
+}
+.m-h4{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: 300;
+    font-family: ProximaReg, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: auto;
+    width: 55%;
+    padding: 1em;
+    margin: 1em 0em 1em 0em;
+    line-height: 24px;
+}
+
+/* DIV 6 */
+.div-6{
+    /* border: 1px solid red; */
+    width: 40%;
+    
+}
+.div-6 #p1{
+    border: 1px solid #989595;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 1em;
+
+    font-family: ProximaReg, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    
+}
+.div-6 #p1:hover{
+    cursor: pointer;
+    border: 1px solid #111;
+    transition: .5s all;
+}
+
+.div-6 #p2{
+    background-color: #0288D1;
+    border: none;
+    color: #fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 1em;
+
+    border-radius: 5px;
+
+    margin: 2em 0em 1em 0em;
+
+    font-family: ProximaReg, Arial, Helvetica, sans-serif;
+
+    
+}
+.div-6 #p2:hover{
+    cursor: pointer;
+    transition: .5s all;
+    background-color: #0572ad;
+}
+
+.p3{
+    /* border: 1px solid red; */
+    width: 100%;
+    font-family: ProximaReg;
+    margin-bottom: 2em;
+    opacity: 0.7;
+    text-align: center;
+    width: 40%;
+}
+
+/* FORM */
+.form{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sel{
+    width: 40%;
+    padding: 1em 1em;
+    margin: 1em 0em 0em 0em;
+}
+.sel optgroup{
+    width: 40%;
+    height: 40%;
+    padding: 1em 1em;
+    margin: 1em 0em 0em 0em;
+}
+
+input{
+    width: 40%;
+}
+
+.form .email{
+    padding: 1em 1em;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #111;
+    opacity: 0.7;
+}
+.form .email:focus{
+    border: 1px solid #204ecf;
+    transition: .5s all;
+}
+
+.form .password{
+    padding: 1em 1em;
+    margin: 1em 0em 1em 0em;
+    outline: none;
+    border: 1px solid #111;
+    opacity: 0.7;
+}
+
+.form .password:focus{
+    border: 1px solid #204ecf;
+    transition: .5s all;
+}
+
+.form .password2{
+    padding: 1em 1em;
+    margin: 0em 0em 1em 0em;
+    outline: none;
+    border: 1px solid #111;
+    opacity: 0.7;
+}
+
+.form .password2:focus{
+    border: 1px solid #204ecf;
+    transition: .5s all;
+}
+
+.form .name{
+    padding: 1em 1em;
+    margin: 1em 0em 1em 0em;
+    outline: none;
+    border: 1px solid #111;
+    opacity: 0.7;
+}
+
+.form .name:focus{
+    border: 1px solid #204ecf;
+    transition: .5s all;
+}
+
+/* DIV 3 & DIV 4  ---- checkbox , login */
+.div-3{
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+}
+
+.div-3 p{
+    padding: 1em 0em 1em 0em;
+    font-family: ProximaReg;
+    font-size: 12px;
+    opacity: 0.7;
+    line-height: 16px;
+}
+
+.div-3 p a{
+    color: #111;
+}  
+
+  /* DIV 4 */
+  .div-4{
+    width: 40%;
+  }
+  .div-4 .btn{
+     /* border: 1px solid red; */
+     padding: 1em 1em;
+
+     margin-top: 1em;
+     margin-bottom: 4em;
+
+     border-radius: 5px;
+     border: none;
+
+     background-color: #00cc83;
+     color: #fff;
+ 
+     width: 100%;
+ 
+     line-height: 24px;
+
+     text-align: center;
+     font-family: ProximaReg, Arial, Helvetica, sans-serif;
+  }
+  .div-4 .btn:hover{
+    cursor: pointer;
+    background-color: #0bac74;
+    transition: .2s all;
+  }
